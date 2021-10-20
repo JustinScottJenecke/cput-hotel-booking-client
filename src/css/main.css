@@ -59,6 +59,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -115,3 +117,40 @@ a {
 
 /*====================================== Body Styles =======================================*/
 
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorDominant);
+    color: var(--colorCompliment);
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__btn {
+    flex: 1;
+    background-color: var(--colorDominant_a);
+    border: none;
+    padding: 1rem;
+    column-gap: 1vw;
+}
+
+#booking__btn {color: var(--colorAccentGreen);}
+#guest__btn {color: var(--colorAccentOrange);}
+#room__btn {color: var(--colorAccentBlue);}
+
+#booking__btn:hover {
+    background-color: var(--colorAccentGreen);
+    color: var(--colorDominant_a);
+}
+#guest__btn:hover {
+    background-color: var(--colorAccentOrange);
+    color: var(--colorDominant_a);
+}
+#room__btn:hover {
+    background-color: var(--colorAccentBlue);
+    color: var(--colorDominant_a);
+}
