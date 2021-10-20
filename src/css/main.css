@@ -20,10 +20,14 @@
         --colorCompliment_a: #c0bebe;
         --colorCompliment_b: #797979;
 
-        --colorAccent: #55ff4d; /*Lime-Neon*/
+        --colorAccentGreen: #55ff4d;
+        --colorAccentOrange: #ffb84d;
+        --colorAccentBlue: #4d94ff; /*Lime-Neon*/
+
+        --colorLink: #4dffff;
 
     /*Font Sizes*/
-        --sizeTitle: 2.4rem;
+        --sizeTitle: 2.2rem;
         --sizeHeading_a: 2rem; 
         --sizeHeading_b: 1.4rem;
         --sizeBody: 1rem;
@@ -73,8 +77,8 @@ body {
 
     font-family: var(--fontBody);
     font-size: var(--sizeBody);
-    background-color: var(--colorDominant);
-    color: var(--colorCompliment);
+    background-color: var(--colorCompliment);
+    color: var(--colorDominant);
 }
 
 h1 {
@@ -99,12 +103,15 @@ h3 {
 
 button {
     font-family: var(--fontlink);
+    cursor: pointer;
 }
 
 a {
     font-family: var(--fontlink);
+    cursor: pointer;
 }
 
 /*===================================== Global Styles =======================================*/
 
 /*====================================== Body Styles =======================================*/
+
