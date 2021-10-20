@@ -16,9 +16,10 @@
         --colorDominant_a:#1d1d1d;
         --colorDominant_b:#333333; /*Components and Contrast*/
 
-        --colorCompliment: #ececec;  /*Text & Contrast*/
-        --colorCompliment_a: #c0bebe;
-        --colorCompliment_b: #797979;
+        --colorCompliment: #eeeeee;  /*Text & Contrast*/
+        --colorCompliment_c: #f5f5f5;  /*Text & Contrast*/
+        --colorCompliment_a: #d4d4d4;
+        --colorCompliment_b: #b8b8b8;
 
         --colorAccentGreen: #55ff4d;
         --colorAccentOrange: #ffb84d;
@@ -117,6 +118,10 @@ a {
     font-size: var(--sizeBody);
 }
 
+table {
+    font-size: 1rem;
+}
+
 /*===================================== Global Styles =======================================*/
 
 /*====================================== Body Styles =======================================*/
@@ -171,7 +176,14 @@ a {
 .tab__active {
     display: flex;
     flex-direction: column;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 1rem;
+}
+
+@media (min-width:800px) {
+    .tab__active {
+        padding: 3rem 5rem 3rem 5rem;
+    }
+    
 }
 
 .tab__body, .operations {
@@ -207,6 +219,44 @@ form {
     background-color: var(--colorCompliment_a);
 }
 
+.operation__btn:hover {
+    background-color: var(--colorCompliment_b);
+}
+
+.tab__body {
+    display: flex;
+}
 
 /*----------------------------- Guests -------------------------------*/
+
+    .guest__table__head {
+        background-color: var(--colorAccentOrange);
+    }
+
+    .guest__table__body > tr:nth-child(even) {
+        background-color: white;
+    }
+    .guest__table__body > tr:nth-child(odd) {
+        background-color: var(--colorCompliment_c);
+    }
+
+    .table__buttons {
+        max-width: 5vw;
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+    }
+
+    .table__buttons > button{
+        background-color: var(--colorCompliment_a);
+        border-radius: 7px;
+        font-size: 1rem;
+    }
+
     
+    .table__buttons > button:hover{
+        background-color: var(--colorCompliment_b);
+    }
+
+/*----------------------------- Rooms -------------------------------*/
+
