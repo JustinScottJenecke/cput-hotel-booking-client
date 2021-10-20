@@ -206,7 +206,7 @@ form input {
 
 form {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 .operation__form {
@@ -260,3 +260,28 @@ form {
 
 /*----------------------------- Rooms -------------------------------*/
 
+    .room__table__head {
+        background-color: var(--colorAccentBlue);
+    }
+
+    .room__table__body > tr:nth-child(even) {
+        background-color: white;
+    }
+    .room__table__body > tr:nth-child(odd) {
+        background-color: var(--colorCompliment_c);
+    }
+
+
+    .room__actions__heading {
+        background-color: var(--colorAccentBlue);
+    }
+
+    .room__form * {
+        margin-bottom: 0.5rem;
+    }
+
+    .room__form__create {
+        background-color: var(--colorAccentBlue);
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }

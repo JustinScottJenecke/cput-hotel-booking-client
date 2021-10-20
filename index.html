@@ -74,14 +74,13 @@
                                 <td>sample</td>
                                 <td>sample</td>
                                 <td class="table__buttons">
-                                    <button>Update</button>
-                                    <button>Delete</button>
+                                    <button class="g__update" >Update</button>
+                                    <button class="g__delete">Delete</button>
                                 </td>
                             </tr>
                         </tbody>
 
-                    </table>
-                
+                    </table>   
                 </div>
 
             </section>
@@ -90,22 +89,68 @@
 
             <section class="tab" id="Rooms">
 
-                <header class="operations">
-
-                </header>
-
                 <div class="tab__body">
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corporis repellat dolor pariatur dicta quis fugiat similique maiores in ipsum porro aliquid velit molestias quos sed possimus ducimus vitae provident.
-                
-                    <br>
+                    <table id="roomTable">
+                        <thead class="room__table__head">
+                            <td>RoomId</td>
+                            <td>BedType</td>
+                            <td>RoomType</td>
+                            <td>Floor</td>
+                            <td>Cost</td>
+                            <td>Operations</td>
+                        </thead>
 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ducimus, recusandae, consequuntur officiis magni ratione debitis perferendis unde praesentium minima suscipit nesciunt necessitatibus corrupti a molestias eaque, perspiciatis aspernatur impedit.
-                
-                    <br>
+                        <tbody class="room__table__body">
+                            <tr>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td class="table__buttons">
+                                    <button class="r__bookings">Bookings</button>
+                                    <button class="r__delete">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>  
+                    
+                    <br><br>
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corporis repellat dolor pariatur dicta quis fugiat similique maiores in ipsum porro aliquid velit molestias quos sed possimus ducimus vitae provident.                
-                
+                    <div class="room__actions">
+                        <div class="room__actions__heading">
+                            <h2 class="room__actions__heading">Create new Room</h2>
+                        </div>
+                        
+                        <form class="room__form">
+
+                            <label for="room__details__choice">Floor:</label>
+                            <select id="room__details__choice" name="room__details__choice" size="1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="0">Top</option>
+                            </select>
+
+                            <label for="room__type__choice">Type:</label>
+                            <select id="room__type__choice" name="room__type__choice" size="1">
+                                <option value="smoking">Smoking</option>
+                                <option value="non">Non-Smoking</option>
+                                <option value="family">Family</option>
+                            </select>
+
+                            <label for="bed__type__choice">Bed Type:</label>
+                            <select id="bed__type__choice" name="bed__type__choice" size="1">
+                                <option value="queen">Queen</option>
+                                <option value="king">King</option>
+                                <option value="double">Double</option>
+                            </select>
+                            <button class="room__form__create">Create Room</button>
+                        </form>
+
+                    </div>
+        
                 </div>
             </section>
 
@@ -113,25 +158,10 @@
 
             <section class="tab" id="Bookings">
 
-                <header class="operations">
-                    <button>
-                        z
-                    </button>
-                </header>
-
-                <div class="tab__body">
-                    <br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ducimus, recusandae, consequuntur officiis magni ratione debitis perferendis unde praesentium minima suscipit nesciunt necessitatibus corrupti a molestias eaque, perspiciatis aspernatur impedit.
-                
-                    <br>
-                </div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nesciunt aspernatur optio sint dolorum voluptate enim dolores voluptas voluptatibus eius. Repudiandae iste eius placeat quo aliquam, eaque repellat ullam totam.
 
             </section>
         </div>
-
-        <footer>
-
-        </footer>
 
         <script type="module" src="./src/index.js"></script>
     </body>
