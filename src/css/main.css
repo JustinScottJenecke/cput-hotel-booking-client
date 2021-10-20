@@ -6,8 +6,8 @@
 :root {
 
     /*Fonts*/
-        --fontHeading: 'Tahoma', sans-serif;
-        --fontBody: 'Helvetica', sans-serif;
+        --fontHeading: 'Trebuchet', sans-serif;
+        --fontBody: 'Tahoma', sans-serif;
         --fontlink: 'Consolas';
         --fontOther: 'Trebuchet', sans-serif;
 
@@ -106,16 +106,19 @@ h3 {
 button {
     font-family: var(--fontlink);
     cursor: pointer;
+    font-size: var(--sizeBody);
 }
 
 a {
     font-family: var(--fontlink);
     cursor: pointer;
+    font-size: var(--sizeBody);
 }
 
 /*===================================== Global Styles =======================================*/
 
 /*====================================== Body Styles =======================================*/
+
 
 .header {
     display: flex;
@@ -153,4 +156,18 @@ a {
 #room__btn:hover {
     background-color: var(--colorAccentBlue);
     color: var(--colorDominant_a);
+}
+
+/*===================================== Header =======================================*/
+
+/*===================================== Tabs =========================================*/
+
+.tab {
+    display: none;    
+}
+
+.tab__active {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
 }

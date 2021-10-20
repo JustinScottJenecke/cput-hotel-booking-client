@@ -2,6 +2,7 @@ export default function tabFunctionality() {
 
     const tabs = document.querySelectorAll('.tab');
     const nav = document.querySelectorAll('.nav__btn');
+    const tabTitle = document.getElementById('subHeading');
     
     nav.forEach(button => {
 
@@ -9,13 +10,16 @@ export default function tabFunctionality() {
             
             const target = button.dataset.tab;
 
+            tabTitle.innerText = target;
+
             tabs.forEach(tab => {
-                tab.classList.remove('active__tab');                    
+                tab.classList.remove('tab__active');                    
             }) 
 
             tabs.forEach(tab => {
                 if (tab.id === target) {
-                    tab.classList.add('active__tab');
+                    tab.classList.add('tab__active');
+                    
                 }                 
             }) 
         })
