@@ -32,29 +32,55 @@
 
         <div class="body" id="body">
 
+<!--========================== Guest Tab ==============================-->
+
             <section class="tab tab__active" id="Guests">
 
                 <header class="operations">
 
                     <form class="operation__form" id="guestSearch">
                         <input type="text" id="guestSearch__name">
-                        <button>Filter Guest Name</button>
+                        <button class="operation__btn">Filter Guest Name</button>
                     </form>
 
                     <form class="operation__form" id="guestSearch">
                         <input type="text" id="guestSearch__id">
-                        <button>Filter Guest ID</button>
+                        <button class="operation__btn">Filter Guest ID</button>
                     </form>
 
                 </header>
 
                 <div class="tab__body">
 
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. A cum expedita in quos inventore obcaecati molestias incidunt? Aperiam, culpa voluptates consequatur quod laboriosam aliquam nulla quaerat aspernatur! Asperiores, necessitatibus consectetur.
+                    <table id="guestTable">
+                        <thead>
+                            <td>ID</td>
+                            <td>Firstname</td>
+                            <td>Lastname</td>
+                            <td>ContactId</td>
+                            <td>Cell</td>
+                            <td>Email</td>
+                            <td>Address</td>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                                <td>sample</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 
                 </div>
 
             </section>
+
+<!--========================== Room Tab ==============================-->            
 
             <section class="tab" id="Rooms">
 
@@ -76,6 +102,8 @@
                 
                 </div>
             </section>
+
+<!--========================== Booking Tab ==============================-->            
 
             <section class="tab" id="Bookings">
 

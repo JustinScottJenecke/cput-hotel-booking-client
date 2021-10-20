@@ -107,29 +107,14 @@ button {
     font-family: var(--fontlink);
     cursor: pointer;
     font-size: var(--sizeBody);
+    border: none;
+    
 }
 
 a {
     font-family: var(--fontlink);
     cursor: pointer;
     font-size: var(--sizeBody);
-}
-
-
-/*-------------------------- forms ---------------------------------*/
-
-form input {
-    font-size: var(--fontBody);
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-.operation__form {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
 }
 
 /*===================================== Global Styles =======================================*/
@@ -195,6 +180,33 @@ form {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.operations * {
+    margin-bottom: 0.25rem;
+}
+
+/*-------------------------- forms ---------------------------------*/
+
+form input {
+    font-size: var(--fontBody);
+    border: none;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.operation__form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.operation__btn {
+    border-radius: 6px;
+    background-color: var(--colorCompliment_a);
+}
+
 
 /*----------------------------- Guests -------------------------------*/
     
